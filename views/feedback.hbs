@@ -1,0 +1,56 @@
+<form action="/feedback" method="post" class="signupForm">
+  <!----------------------- Main Container -------------------------->
+  <div
+    class="container d-flex justify-content-center align-items-center min-vh-100"
+  >
+    <!----------------------- Login Container -------------------------->
+    <div class="row border rounded-5 p-3 bg-white shadow box-area">
+      <div class="mb-3">
+        <h1>Feedback</h1>
+        <div class="rating d-flex justify-content-center">
+          <span class="star" data-rating="1">★</span>
+          <span class="star" data-rating="2">★</span>
+          <span class="star" data-rating="3">★</span>
+          <span class="star" data-rating="4">★</span>
+          <span class="star" data-rating="5">★</span>
+        </div>
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="user_name"
+          name="username"
+          placeholder="Username"
+          required
+        />
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com"
+          name="email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Tell US</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          name="feed"
+          required
+        />
+      </div>
+      <div class="button_div">
+        <button
+          class="btn btn-lg btn-primary w-100 fs-6"
+          type="submit"
+          id="submit"
+        >Send</button>
+      </div>
+    </div>
+  </div>
+</form>

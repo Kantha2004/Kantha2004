@@ -1,0 +1,95 @@
+@import "compass/css3";
+table {
+  font-family: "Arial";
+  margin: 25px auto;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  /* border-radius: 40px; */
+  border-bottom: 2px solid #0cc;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+table tr:hover {
+  background: #f4f4f4;
+}
+table tr:hover td {
+  color: #555;
+}
+table th,
+table td {
+  color: #000;
+  border: 1px solid #eee;
+  padding: 12px 35px;
+  border-collapse: collapse;
+}
+table th {
+  background: #0d6efd;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+table th.last {
+  border-right: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.con_add {
+  margin-right: 20%;
+  display: flex;
+  /* justify-content: flex-end;  */
+  align-items: center;
+  flex-direction: column;
+}
+
+.con_ur {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.adduser {
+  float: right;
+}
+
+.float_add_btn {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0d6efd;
+  border-radius: 50%;
+  position: fixed;
+}
+
+.top_1 {
+  right: 20px;
+  bottom: 90px;
+}
+
+.top_2 {
+  right: 20px;
+  bottom: 20px;
+}
+.top_3 {
+  right: 20px;
+  bottom: 160px;
+}
+
+.float_add_btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+table thead {
+  position: sticky;
+}
+
+.table_con {
+  max-height: 600px;
+  overflow-y: scroll;
+}

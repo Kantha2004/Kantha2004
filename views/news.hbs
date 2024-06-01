@@ -1,0 +1,50 @@
+<form action="/sendmailbyadmin" method="post">
+ <h1 class="mt-2">NEWSLETTER</h1>
+   <div class="container d-flex justify-content-center align-items-center min-height-600">
+      <div class="row border rounded-5 p-3 bg-white shadow box-area">
+         <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box">
+                           <label class="form-check-label" for="ur">
+                  Subject
+                  </label>
+            <div class="input-group mb-3" >
+               <input type="text" placeholder="Subject" id="ur" name="ur" class="form-control form-control-lg bg-light fs-6" required>
+            </div>
+            <label class="form-check-label float-left" for="ur">
+                  Topic Name
+                  </label>
+            <div class="input-group mb-3">
+               <input type="text"  placeholder="Topic" class="form-control form-control-lg bg-light fs-6" id="email" name="email" required>
+            </div>
+            <div class=" left_options margin_bottom_10">
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="interest" id="Sports" value="Sports">
+                  <label for="Sports">Sports</label>
+                  Sports
+                  </label><br>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="interest" id="Technology" value="Technology" >
+                  <label class="form-check-label" for="Technology">
+                  Technolody
+                  </label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="interest" id="Cinema" value="Cinema" >
+                  <label for="Cinema">Cinema</label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="interest" id="Politics" value="Politics" >
+                  <label for="Politics">Politics</label>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6 right-box">
+            <div class="row align-items-center">
+               <textarea class="margin_bottom_10" name="contant" id="" cols="30" rows="10">
+               </textarea>
+               <button class="btn btn-lg btn-primary w-100 fs-6" type="submit" id="submit">SEND</button>
+            </div>
+         </div>
+      </div>
+   </div>
+</form>

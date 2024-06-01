@@ -1,0 +1,23 @@
+.rating {
+  font-size: 3rem;
+  color: #ccc;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #ffc107;
+}
+
+.star[data-rating="1"]:hover ~ .star:nth-child(-n + 1),
+.star[data-rating="2"]:hover ~ .star:nth-child(-n + 2),
+.star[data-rating="3"]:hover ~ .star:nth-child(-n + 3),
+.star[data-rating="4"]:hover ~ .star:nth-child(-n + 4),
+.star[data-rating="5"] {
+  color: #ffc107;
+}

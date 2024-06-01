@@ -1,0 +1,21 @@
+<h1>User Feedback</h1>
+<div class="table_con">
+  <table>
+    <thead>
+      <th>#</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Feed</th>
+    </thead>
+    <tbody>
+      {{#each rows}}
+        <tr>
+          <td>{{this.id}}</td>
+          <td>{{this.username}}</td>
+          <td>{{this.email}}</td>
+          <td>{{this.feedback}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

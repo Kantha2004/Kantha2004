@@ -1,0 +1,23 @@
+{{#each data}}
+<!----------------------- Main Container -------------------------->
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+   <!----------------------- Login Container -------------------------->
+   <div class="row border rounded-5 p-3 bg-white shadow box-area">
+      <!--------------------------- Left Box ----------------------------->
+      <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #103cbe;">
+         <div class="featured-image mb-3">
+            <img src="images/1.png" class="img-fluid" style="width: 250px;">
+         </div>
+         <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Be Notified</p>
+         <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Enjoy Weekly news on this platform.</small>
+      </div>
+      <!-------------------- ------ Right Box ---------------------------->
+      <div class="col-md-6 right-box">
+         <p>Hello {{this.ur}}</p>
+         <p>Thank you for registering to this automated newsletter
+            You will recevive {{this.interest}} news each week.
+         </p>
+      </div>
+   </div>
+</div>
+{{/each}}

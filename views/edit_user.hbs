@@ -1,0 +1,57 @@
+{{#each rows}}
+<div class="container_edit_">
+   <div class="container_edit">
+      <form action="/edit/{{this.id}}" method="post">
+         <h1>EDIT USER</h1>
+         <input type="text" placeholder="username" id="ur" name="ur" value="{{this.user}}"><br>
+         <input type="text" placeholder="email" id="email" name="email" value="{{this.email}}"><br>
+         <button onclick="return confirm('Are you sure you want to edit this User details?')" type="submit" id="submit">Change</button>
+      </form>
+   </div>
+</div>
+<style>/* Center the container horizontally */
+   .container_edit_ {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   }
+   /* Add this CSS to your existing stylesheet or 
+<style> tag */
+   .container_edit {
+   min-height: 200px;
+   max-width: 400px;
+   min-width: 400px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #f9f9f9;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.353);
+   }
+   .container_edit form {
+   display: flex;
+   flex-direction: column;
+   }
+   .container_edit input[type="text"] {
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 14px;
+   }
+   .container_edit button {
+   padding: 10px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+   }
+   .container_edit button:hover {
+   background-color: #0056b3;
+   }
+</style>
+{{/each}}

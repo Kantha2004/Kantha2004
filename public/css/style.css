@@ -1,0 +1,17 @@
+body {
+  background: #f6f5f5;
+  overflow: hidden;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.min-height-600 {
+  min-height: 600px;
+}
